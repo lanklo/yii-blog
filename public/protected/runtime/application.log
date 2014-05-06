@@ -1,0 +1,1473 @@
+2013/09/26 14:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yii".' in Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('yii')
+#1 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=yii
+---
+2013/09/26 14:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=gii
+---
+2013/10/09 18:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post;".' in Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post;')
+#1 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=post;
+---
+2013/11/04 13:30:24 [error] [php] include(normaliseTags.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\yii-blog\public\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\validators\CValidator.php(186): import()
+#1 Z:\home\yii-blog\public\yii\framework\base\CModel.php(287): createValidator()
+#2 Z:\home\yii-blog\public\yii\framework\base\CModel.php(260): Post->createValidators()
+#3 Z:\home\yii-blog\public\yii\framework\web\helpers\CHtml.php(2236): Post->getValidators()
+#4 Z:\home\yii-blog\public\yii\framework\web\helpers\CHtml.php(1434): activeInputField()
+#5 Z:\home\yii-blog\public\yii\framework\web\widgets\CActiveForm.php(725): activeTextField()
+#6 Z:\home\yii-blog\public\protected\views\post\_search.php(16): CActiveForm->textField()
+#7 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require()
+#8 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): PostController->renderFile()
+#10 Z:\home\yii-blog\public\protected\views\post\admin.php(40): PostController->renderPartial()
+#11 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require()
+#12 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): PostController->renderInternal()
+#13 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): PostController->renderFile()
+#14 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): PostController->renderPartial()
+#15 Z:\home\yii-blog\public\protected\controllers\PostController.php(153): PostController->render()
+#16 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionAdmin()
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#19 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#21 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#22 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#23 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#25 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#26 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#27 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/admin
+in Z:\home\yii-blog\public\protected\views\post\_search.php (16)
+in Z:\home\yii-blog\public\protected\views\post\admin.php (40)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (153)
+2013/11/04 13:37:01 [error] [php] Trying to get property of non-object (Z:\home\yii-blog\public\protected\views\post\view.php:7)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): PostController->renderFile()
+#1 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): PostController->renderPartial()
+#2 Z:\home\yii-blog\public\protected\controllers\PostController.php(52): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 Z:\home\yii-blog\public\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#15 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1
+in Z:\home\yii-blog\public\protected\views\post\view.php (7)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (52)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 13:37:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'name'. The SQL statement executed was: INSERT INTO `tbl_tag` (`name`, `frequency`) VALUES (:yp0, :yp1).
+in Z:\home\yii-blog\public\protected\models\Tag.php (129)
+in Z:\home\yii-blog\public\protected\models\Tag.php (113)
+in Z:\home\yii-blog\public\protected\models\Post.php (131)
+2013/11/04 13:37:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'name'. The SQL statement executed was: INSERT INTO `tbl_tag` (`name`, `frequency`) VALUES (:yp0, :yp1)' in Z:\home\yii-blog\public\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 Z:\home\yii-blog\public\protected\models\Tag.php(129): CActiveRecord->save()
+#3 Z:\home\yii-blog\public\protected\models\Tag.php(113): Tag->addTags(Array)
+#4 Z:\home\yii-blog\public\protected\models\Post.php(131): Tag->updateFrequency(NULL, '???????')
+#5 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1097): Post->afterSave()
+#6 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#7 Z:\home\yii-blog\public\protected\controllers\PostController.php(69): CActiveRecord->save()
+#8 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#18 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/create')
+#19 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php?r=post/create
+HTTP_REFERER=http://yii-blog/index.php?r=post/create
+---
+2013/11/04 13:39:53 [error] [php] Trying to get property of non-object (Z:\home\yii-blog\public\protected\views\post\view.php:7)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): PostController->renderFile()
+#1 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): PostController->renderPartial()
+#2 Z:\home\yii-blog\public\protected\controllers\PostController.php(52): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 Z:\home\yii-blog\public\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#15 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=End+of+the+World
+in Z:\home\yii-blog\public\protected\views\post\view.php (7)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (52)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 13:52:23 [error] [php] Trying to get property of non-object (Z:\home\yii-blog\public\protected\views\post\view.php:7)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): PostController->renderFile()
+#1 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): PostController->renderPartial()
+#2 Z:\home\yii-blog\public\protected\controllers\PostController.php(52): PostController->render()
+#3 unknown(0): PostController->actionView()
+#4 Z:\home\yii-blog\public\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#15 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=End+of+the+World
+in Z:\home\yii-blog\public\protected\views\post\view.php (7)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (52)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 13:54:45 [error] [php] Trying to get property of non-object (Z:\home\yii-blog\public\protected\views\post\view.php:7)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): PostController->renderFile()
+#1 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): PostController->renderPartial()
+#2 Z:\home\yii-blog\public\protected\controllers\PostController.php(52): PostController->render()
+#3 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#4 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#9 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#12 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1&title=End+of+the+World
+in Z:\home\yii-blog\public\protected\views\post\view.php (7)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (52)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:24 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:24 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:24 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:29 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:29 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:29 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:31 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:31 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:31 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:32 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:32 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:32 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (63)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:08:37 [error] [php] Missing argument 2 for CActiveRecord::setAttribute(), called in Z:\home\yii-blog\public\yii\framework\base\CComponent.php on line 152 and defined (Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php:707)
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(68): Comment->__set()
+#1 Z:\home\yii-blog\public\protected\controllers\PostController.php(50): PostController->_newComment()
+#2 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#3 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#5 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#12 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=post/view&id=1
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (68)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:09:07 [warning] [application] Failed to set unsafe attribute "status" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (68)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:09:07 [warning] [application] Failed to set unsafe attribute "create_time" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (68)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:09:07 [warning] [application] Failed to set unsafe attribute "post_id" of "Comment".
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (68)
+in Z:\home\yii-blog\public\protected\controllers\PostController.php (50)
+in Z:\home\yii-blog\public\index.php (13)
+2013/11/04 16:30:12 [error] [exception.CException] exception 'CException' with message 'Property "Comment.pendingCommentCount" is not defined.' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('pendingCommentC...')
+#1 Z:\home\yii-blog\public\protected\components\views\userMenu.php(5): CActiveRecord->__get('pendingCommentC...')
+#2 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(130): require('Z:\home\yii-blo...')
+#3 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', NULL, false)
+#4 Z:\home\yii-blog\public\yii\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('Z:\home\yii-blo...', NULL, false)
+#5 Z:\home\yii-blog\public\protected\components\UserMenu.php(15): CWidget->render('userMenu')
+#6 Z:\home\yii-blog\public\yii\framework\zii\widgets\CPortlet.php(97): UserMenu->renderContent()
+#7 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(173): CPortlet->run()
+#8 Z:\home\yii-blog\public\protected\views\layouts\column2.php(10): CBaseController->widget('UserMenu')
+#9 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#10 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#12 Z:\home\yii-blog\public\protected\controllers\PostController.php(162): CController->render('index', Array)
+#13 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#14 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#23 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#24 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=post/index
+---
+2013/11/04 16:39:36 [error] [exception.CException] exception 'CException' with message 'Tag and its behaviors do not have a method or closure named "findTagWeights".' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('findTagWeights', Array)
+#1 Z:\home\yii-blog\public\protected\components\TagCloud.php(11): CActiveRecord->__call('findTagWeights', Array)
+#2 Z:\home\yii-blog\public\protected\components\TagCloud.php(11): Tag->findTagWeights(NULL)
+#3 Z:\home\yii-blog\public\yii\framework\zii\widgets\CPortlet.php(97): TagCloud->renderContent()
+#4 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(173): CPortlet->run()
+#5 Z:\home\yii-blog\public\protected\views\layouts\column2.php(14): CBaseController->widget('TagCloud', Array)
+#6 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#7 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#9 Z:\home\yii-blog\public\protected\controllers\PostController.php(162): CController->render('index', Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#20 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#21 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php?r=post/index
+---
+2013/11/04 16:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts".' in Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('posts')
+#1 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/posts/
+---
+2013/11/04 16:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts".' in Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('posts')
+#1 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/posts/
+---
+2013/11/04 16:55:42 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "post" is not defined in active record class "Comment".' in Z:\home\yii-blog\public\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'post')
+#1 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Comment), Array)
+#3 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 Z:\home\yii-blog\public\protected\models\Comment.php(132): CActiveRecord->findAll(Array)
+#6 Z:\home\yii-blog\public\protected\components\RecentComments.php(11): Comment->findRecentComments(NULL)
+#7 Z:\home\yii-blog\public\protected\components\views\recentComments.php(2): RecentComments->getRecentComments()
+#8 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(130): require('Z:\home\yii-blo...')
+#9 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', NULL, false)
+#10 Z:\home\yii-blog\public\yii\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('Z:\home\yii-blo...', NULL, false)
+#11 Z:\home\yii-blog\public\protected\components\RecentComments.php(16): CWidget->render('recentComments')
+#12 Z:\home\yii-blog\public\yii\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#13 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(173): CPortlet->run()
+#14 Z:\home\yii-blog\public\protected\views\layouts\column2.php(18): CBaseController->widget('RecentComments', Array)
+#15 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#16 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#18 Z:\home\yii-blog\public\protected\controllers\PostController.php(162): CController->render('index', Array)
+#19 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#20 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#29 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#30 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/index.php/posts/yii
+---
+2013/11/04 16:55:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "1".' in Z:\home\yii-blog\public\yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CController.php(270): CController->missingAction('1')
+#1 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('1')
+#2 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/1')
+#3 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/post/1
+---
+2013/11/04 16:56:18 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "post" is not defined in active record class "Comment".' in Z:\home\yii-blog\public\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'post')
+#1 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct(Object(Comment), Array)
+#3 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 Z:\home\yii-blog\public\protected\models\Comment.php(132): CActiveRecord->findAll(Array)
+#6 Z:\home\yii-blog\public\protected\components\RecentComments.php(11): Comment->findRecentComments(NULL)
+#7 Z:\home\yii-blog\public\protected\components\views\recentComments.php(2): RecentComments->getRecentComments()
+#8 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(130): require('Z:\home\yii-blo...')
+#9 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', NULL, false)
+#10 Z:\home\yii-blog\public\yii\framework\web\widgets\CWidget.php(244): CBaseController->renderFile('Z:\home\yii-blo...', NULL, false)
+#11 Z:\home\yii-blog\public\protected\components\RecentComments.php(16): CWidget->render('recentComments')
+#12 Z:\home\yii-blog\public\yii\framework\zii\widgets\CPortlet.php(97): RecentComments->renderContent()
+#13 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(173): CPortlet->run()
+#14 Z:\home\yii-blog\public\protected\views\layouts\column2.php(18): CBaseController->widget('RecentComments', Array)
+#15 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#16 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#18 Z:\home\yii-blog\public\protected\controllers\PostController.php(162): CController->render('index', Array)
+#19 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#20 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#29 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#30 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/index.php/posts/index/
+---
+2013/11/04 17:43:01 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM YiiCache WHERE expire>0 AND expire<1383576181
+2013/11/04 17:43:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such table: YiiCache. The SQL statement executed was: DELETE FROM YiiCache WHERE expire>0 AND expire<1383576181.
+2013/11/04 17:43:01 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.systemCachingDuration" is not defined.' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\YiiBase.php(220): CComponent->__set('systemCachingDu...', 3600)
+#1 Z:\home\yii-blog\public\yii\framework\base\CModule.php(386): YiiBase::createComponent(Array)
+#2 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(450): CModule->getComponent('db')
+#3 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#4 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(667): CActiveRecord->getDbConnection()
+#5 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1595): CActiveRecord->getCommandBuilder()
+#6 Z:\home\yii-blog\public\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#7 Z:\home\yii-blog\public\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#8 Z:\home\yii-blog\public\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#9 Z:\home\yii-blog\public\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#10 Z:\home\yii-blog\public\yii\framework\zii\widgets\CBaseListView.php(111): CDataProvider->getData()
+#11 Z:\home\yii-blog\public\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#12 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(147): CListView->init()
+#13 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#14 Z:\home\yii-blog\public\protected\views\post\index.php(25): CBaseController->widget('zii.widgets.CLi...', Array)
+#15 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#16 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#18 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#19 Z:\home\yii-blog\public\protected\controllers\PostController.php(162): CController->render('index', Array)
+#20 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#21 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#23 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#24 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#25 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#26 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#27 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#28 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('')
+#30 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#31 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#32 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/
+---
+2013/12/04 14:50:18 [error] [exception.CDbException] could not find driver
+2013/12/04 14:50:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/04 14:50:18 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:14 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:14 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:42 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:42 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:42 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:42 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:43 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:58 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:58 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:59 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:59 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:59 [error] [exception.CDbException] could not find driver
+2013/12/12 10:00:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:00:59 [error] [exception.CDbException] could not find driver
+2013/12/12 10:01:00 [error] [exception.CDbException] could not find driver
+2013/12/12 10:01:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:01:00 [error] [exception.CDbException] could not find driver
+2013/12/12 10:01:00 [error] [exception.CDbException] could not find driver
+2013/12/12 10:01:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:01:00 [error] [exception.CDbException] could not find driver
+2013/12/12 10:01:00 [error] [exception.CDbException] could not find driver
+2013/12/12 10:01:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:01:00 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:14:44 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:46 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:14:46 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:48 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:14:48 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:50 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:14:50 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:51 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:14:51 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:51 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:14:51 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:51 [error] [exception.CDbException] could not find driver
+2013/12/12 10:14:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:14:51 [error] [exception.CDbException] could not find driver
+2013/12/12 10:19:10 [error] [exception.CDbException] could not find driver
+2013/12/12 10:19:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php:388
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 Z:\home\yii-blog\public\yii\framework\caching\CDbCache.php(78): CDbConnection->setActive(true)
+#2 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CDbCache->init()
+#3 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(216): CModule->getComponent('cache')
+#4 Z:\home\yii-blog\public\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#5 Z:\home\yii-blog\public\yii\framework\base\CModule.php(387): CUrlManager->init()
+#6 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#8 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:19:10 [error] [exception.CDbException] could not find driver
+2013/12/12 10:24:32 [error] [exception.CException] exception 'CException' with message 'Property "Team.members" is not defined.' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('members')
+#1 Z:\home\yii-blog\public\protected\controllers\PostController.php(154): CActiveRecord->__get('members')
+#2 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#3 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:25:25 [error] [exception.CException] exception 'CException' with message 'Property "Team.members" is not defined.' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('members')
+#1 Z:\home\yii-blog\public\protected\controllers\PostController.php(154): CActiveRecord->__get('members')
+#2 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#3 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('')
+#12 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:25:41 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "Team" has an invalid configuration for relation "members". It must specify the relation type, the related active record class and the foreign key.' in Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php:2410
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(2389): CActiveRecordMetaData->addRelation('members', Array)
+#1 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Team))
+#2 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#3 Z:\home\yii-blog\public\protected\controllers\PostController.php(145): CActiveRecord->__construct()
+#4 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2013/12/12 10:25:58 [error] [php] Indirect modification of overloaded property Team::$members has no effect (Z:\home\yii-blog\public\protected\controllers\PostController.php:154)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#1 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2013/12/12 10:26:39 [error] [php] Indirect modification of overloaded property Team::$members has no effect (Z:\home\yii-blog\public\protected\controllers\PostController.php:154)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#1 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2013/12/12 10:26:41 [error] [php] Indirect modification of overloaded property Team::$members has no effect (Z:\home\yii-blog\public\protected\controllers\PostController.php:154)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#1 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2013/12/12 10:26:50 [error] [php] Indirect modification of overloaded property Team::$members has no effect (Z:\home\yii-blog\public\protected\controllers\PostController.php:154)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#1 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2013/12/12 10:26:51 [error] [php] Indirect modification of overloaded property Team::$members has no effect (Z:\home\yii-blog\public\protected\controllers\PostController.php:154)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#1 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2013/12/12 10:27:26 [error] [php] Indirect modification of overloaded property Team::$members has no effect (Z:\home\yii-blog\public\protected\controllers\PostController.php:154)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#1 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#7 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2013/12/20 12:22:25 [error] [exception.CException] exception 'CException' with message 'Alias "application.model.User" is invalid. Make sure it points to an existing PHP file and the file is readable.' in Z:\home\yii-blog\public\yii\framework\YiiBase.php:322
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(250): YiiBase::import('application.mod...', true)
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIterations()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('iterations')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/iterations')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/iterations
+HTTP_REFERER=http://yii-blog/index.php/site/login
+---
+2013/12/20 12:22:42 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.condotion" is not defined.' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\schema\CDbCriteria.php(160): CComponent->__set('condotion', 't.username LIKE...')
+#1 Z:\home\yii-blog\public\yii\framework\web\CActiveDataProvider.php(117): CDbCriteria->__construct(Array)
+#2 Z:\home\yii-blog\public\yii\framework\base\CComponent.php(152): CActiveDataProvider->setCriteria(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\CActiveDataProvider.php(96): CComponent->__set('criteria', Array)
+#4 Z:\home\yii-blog\public\protected\controllers\PostController.php(265): CActiveDataProvider->__construct('User', Array)
+#5 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionIterations()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('iterations')
+#15 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/iterations')
+#16 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php/post/iterations
+HTTP_REFERER=http://yii-blog/index.php/site/login
+---
+2013/12/23 09:51:48 [error] [php] call_user_func_array() expects parameter 1 to be a valid callback, non-static method TranslitFilter::translitUrl() should not be called statically (Z:\home\yii-blog\public\yii\framework\validators\CFilterValidator.php:47)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\base\CModel.php(159): CFilterValidator->validate()
+#1 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(805): Post->validate()
+#2 Z:\home\yii-blog\public\protected\controllers\PostController.php(93): Post->save()
+#3 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#4 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#9 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#12 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/post/create
+2013/12/23 09:52:01 [error] [php] strstr() [<a href='http://www.php.net/manual/ru/function.strstr.php'>function.strstr.php</a>]: needle is not a string or an integer (Z:\home\yii-blog\public\protected\components\TranslitFilter.php:24)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\validators\CFilterValidator.php(47): call_user_func_array()
+#1 Z:\home\yii-blog\public\yii\framework\validators\CValidator.php(213): CFilterValidator->validateAttribute()
+#2 Z:\home\yii-blog\public\yii\framework\base\CModel.php(159): CFilterValidator->validate()
+#3 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(805): Post->validate()
+#4 Z:\home\yii-blog\public\protected\controllers\PostController.php(93): Post->save()
+#5 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#15 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/post/create
+2013/12/23 09:52:20 [error] [php] strstr() [<a href='http://www.php.net/manual/ru/function.strstr.php'>function.strstr.php</a>]: needle is not a string or an integer (Z:\home\yii-blog\public\protected\components\TranslitFilter.php:24)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\validators\CFilterValidator.php(47): call_user_func_array()
+#1 Z:\home\yii-blog\public\yii\framework\validators\CValidator.php(213): CFilterValidator->validateAttribute()
+#2 Z:\home\yii-blog\public\yii\framework\base\CModel.php(159): CFilterValidator->validate()
+#3 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(805): Post->validate()
+#4 Z:\home\yii-blog\public\protected\controllers\PostController.php(93): Post->save()
+#5 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#14 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#15 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/post/create
+2013/12/23 09:53:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:201
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=3
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 09:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:201
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=3
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 09:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:201
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=3
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 09:54:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:201
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=3
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 09:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:201
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=3
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 09:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:201
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=3
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 09:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:201
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=3
+---
+2013/12/23 10:19:16 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CActiveForm.0".' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('0', Array)
+#1 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(PostController), 'CActiveForm', Array)
+#2 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 Z:\home\yii-blog\public\protected\views\post\_form.php(17): CBaseController->beginWidget('CActiveForm', Array)
+#4 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#5 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#7 Z:\home\yii-blog\public\protected\views\post\create.php(18): CController->renderPartial('_form', Array)
+#8 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#9 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 Z:\home\yii-blog\public\protected\controllers\PostController.php(104): CController->render('create', Array)
+#13 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#14 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/create')
+#24 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/post/create
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 10:19:58 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CActiveForm.enctype".' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('enctype', 'multipart/form-...')
+#1 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(PostController), 'CActiveForm', Array)
+#2 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 Z:\home\yii-blog\public\protected\views\post\_form.php(17): CBaseController->beginWidget('CActiveForm', Array)
+#4 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#5 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#6 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#7 Z:\home\yii-blog\public\protected\views\post\create.php(18): CController->renderPartial('_form', Array)
+#8 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#9 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 Z:\home\yii-blog\public\protected\controllers\PostController.php(104): CController->render('create', Array)
+#13 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#14 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/create')
+#24 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/post/create
+---
+2013/12/23 10:20:40 [error] [php] move_uploaded_file() [<a href='http://www.php.net/manual/ru/function.move-uploaded-file.php'>function.move-uploaded-file.php</a>]: The second argument to copy() function cannot be a directory (Z:\home\yii-blog\public\yii\framework\web\CUploadedFile.php:198)
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionCreate()
+#1 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#9 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/post/create
+2013/12/23 15:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрашиваемая страница не существует.' in Z:\home\yii-blog\public\protected\controllers\PostController.php:206
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(49): PostController->loadModel()
+#1 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(49): PostController->actionView()
+#2 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#11 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/view')
+#12 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/post/view?id=5
+HTTP_REFERER=http://yii-blog/index.php/post/create
+---
+2013/12/23 16:04:42 [error] [php] include(Item.php) [<a href='http://www.php.net/manual/ru/function.include.php'>function.include.php</a>]: failed to open stream: No such file or directory (Z:\home\yii-blog\public\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 Z:\home\yii-blog\public\protected\controllers\PostController.php(132): spl_autoload_call()
+#1 unknown(0): PostController->actionUpdate()
+#2 Z:\home\yii-blog\public\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#6 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#9 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): PostController->runActionWithFilters()
+#12 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): PostController->run()
+#13 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\yii-blog\public\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/post/update/1
+2013/12/23 16:04:51 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Post.document".' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('document')
+#1 Z:\home\yii-blog\public\protected\views\post\_form.php(48): CActiveRecord->__get('document')
+#2 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#3 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#4 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#5 Z:\home\yii-blog\public\protected\views\post\update.php(21): CController->renderPartial('_form', Array)
+#6 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(126): require('Z:\home\yii-blo...')
+#7 Z:\home\yii-blog\public\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\yii-blo...', Array, true)
+#8 Z:\home\yii-blog\public\yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\yii-blo...', Array, true)
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#10 Z:\home\yii-blog\public\protected\controllers\PostController.php(143): CController->render('update', Array)
+#11 [internal function]: PostController->actionUpdate('1')
+#12 Z:\home\yii-blog\public\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#13 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#14 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#23 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#24 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php/post/update/1
+HTTP_REFERER=http://yii-blog/index.php/post/admin
+---
+2013/12/23 16:11:05 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Post.document".' in Z:\home\yii-blog\public\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('document')
+#1 Z:\home\yii-blog\public\protected\models\Post.php(179): CActiveRecord->__get('document')
+#2 Z:\home\yii-blog\public\protected\models\Post.php(145): Post->deleteDocument()
+#3 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(1119): Post->beforeSave()
+#4 Z:\home\yii-blog\public\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->update(NULL)
+#5 Z:\home\yii-blog\public\protected\controllers\PostController.php(137): CActiveRecord->save()
+#6 [internal function]: PostController->actionUpdate('1')
+#7 Z:\home\yii-blog\public\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#8 Z:\home\yii-blog\public\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#9 Z:\home\yii-blog\public\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 Z:\home\yii-blog\public\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 Z:\home\yii-blog\public\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 Z:\home\yii-blog\public\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 Z:\home\yii-blog\public\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 Z:\home\yii-blog\public\yii\framework\web\CController.php(291): CFilterChain->run()
+#16 Z:\home\yii-blog\public\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(282): CController->run('update')
+#18 Z:\home\yii-blog\public\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('post/update')
+#19 Z:\home\yii-blog\public\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 Z:\home\yii-blog\public\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/post/update/1
+HTTP_REFERER=http://yii-blog/index.php/post/update/1
+---
