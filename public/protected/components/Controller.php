@@ -20,4 +20,23 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+
+        protected function beforeAction($action)
+        {
+            parent::beforeAction($action);
+
+            $cs = Yii::app()->clientScript;
+            $cs->registerCssFile(Yii::app()->baseUrl . '/css/screen.css', 'screen, projection');
+            $cs->registerCssFile(Yii::app()->baseUrl . '/css/print.css', 'print');
+            $cs->registerCssFile(Yii::app()->baseUrl . '/css/main.css');
+            $cs->registerCssFile(Yii::app()->baseUrl . '/css/form.css');
+
+            $cs->scriptMap = array(
+                'jquery.js' => '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js',
+                'jquery.ajaxqueue.js' => false,
+                'jquery.metadata.js' => false,
+            );
+
+            return true;
+        }
 }
